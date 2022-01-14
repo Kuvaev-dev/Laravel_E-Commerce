@@ -28,7 +28,6 @@
 
 <main id="main">
     <div class="container">
-
         <!--MAIN SLIDE-->
         <div class="wrap-main-slide">
             <div class="slide-carousel owl-carousel style-nav-1" data-items="1" data-loop="1" data-nav="true" data-dots="false">
@@ -194,7 +193,7 @@
                 <div class="product product-style-2 equal-elem ">
                     <div class="product-thumnail">
                         <a href="detail.html" title="T-Shirt Raw Hem Organic Boro Constrast Denim">
-                            <figure><img src="{{ asset('assets/images/products/digital_04.jpg') }}" width="800" height="800" alt="T-Shirt Raw Hem Organic Boro Constrast Denim"></figure>
+                            <figure><img src="{{ asset('assets/images/products/digital_4.jpg') }}" width="800" height="800" alt="T-Shirt Raw Hem Organic Boro Constrast Denim"></figure>
                         </a>
                         <div class="group-flash">
                             <span class="flash-item sale-label">sale</span>

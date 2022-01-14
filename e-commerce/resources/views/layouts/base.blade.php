@@ -43,8 +43,7 @@
 						</div>
 						<div class="topbar-menu right-menu">
 							<ul>
-								<li class="menu-item" ><a title="Register or Login" href="login.html">Login</a></li>
-								<li class="menu-item" ><a title="Register or Login" href="register.html">Register</a></li>
+
 								<li class="menu-item lang-menu menu-item-has-children parent">
 									<a title="English" href="#"><span class="img label-before"><img src="assets/images/lang-en.png" alt="lang-en"></span>English<i class="fa fa-angle-down" aria-hidden="true"></i></a>
 									<ul class="submenu lang" >
@@ -177,7 +176,6 @@
 								</a>
 							</div>
 						</div>
-
 					</div>
 				</div>
 
@@ -258,7 +256,7 @@
 						<li class="fc-info-item">
 							<i class="fa fa-life-ring" aria-hidden="true"></i>
 							<div class="wrap-left-info">
-								<h4 class="fc-name">Online Suport</h4>
+								<h4 class="fc-name">Online Support</h4>
 								<p class="fc-desc">We Have Support 24/7</p>
 							</div>
 
@@ -269,11 +267,8 @@
 			<!--End function info-->
 
 			<div class="main-footer-content">
-
 				<div class="container">
-
 					<div class="row">
-
 						<div class="col-lg-4 col-sm-4 col-md-4 col-xs-12">
 							<div class="wrap-footer-item">
 								<h3 class="item-header">Contact Details</h3>
@@ -402,7 +397,6 @@
 								</div>
 							</div>
 						</div>
-
 					</div>
 				</div>
 
@@ -450,7 +444,6 @@
 									<li><a href="#" class="redirect-back-link" title="BootsMen Watches" >BootsMen Watches</a></li>
 									<li><a href="#" class="redirect-back-link" title="Women Watches" >Women Watches</a></li>
 								</ul>
-
 							</div>
 						</div>
 					</div>
@@ -461,7 +454,7 @@
 			<div class="coppy-right-box">
 				<div class="container">
 					<div class="coppy-right-item item-left">
-						<p class="coppy-right-text">Copyright В© 2020 Surfside Media. All rights reserved</p>
+						<p class="coppy-right-text">Copyright © 2022 Kuvaev Nikita. All rights reserved</p>
 					</div>
 					<div class="coppy-right-item item-right">
 						<div class="wrap-nav horizontal-nav">
