@@ -15,7 +15,6 @@
     <link rel="stylesheet" type="text/css" href="assets/css/chosen.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="assets/css/color-01.css">
-    <link rel="stylesheet" href="{{ mix('css/app.css') }}">
 </head>
 <body class="home-page home-01 ">
 

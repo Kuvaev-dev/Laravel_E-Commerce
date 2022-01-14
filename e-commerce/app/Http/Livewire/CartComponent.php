@@ -6,6 +6,10 @@ use Livewire\Component;
 
 class CartComponent extends Component
 {
+    public function increaseQuantity($rowId) {
+
+    }
+
     public function render()
     {
         return view('livewire.cart-component')->layout("layouts.base");
