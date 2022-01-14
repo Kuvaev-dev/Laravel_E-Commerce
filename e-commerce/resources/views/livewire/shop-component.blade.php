@@ -15,6 +15,7 @@
     <link rel="stylesheet" type="text/css" href="assets/css/chosen.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="assets/css/color-01.css">
+    <link rel="stylesheet" href="{{ mix('css/app.css') }}">
 </head>
 <body class="home-page home-01 ">
 
@@ -87,7 +88,7 @@
                                 <div class="product-info">
                                     <a href="{{ route('product.details', ['slug' => $product->slug]) }}" class="product-name"><span>{{ $product->name }}</span></a>
                                     <div class="wrap-price"><span class="product-price">${{ $product->regular_price }}</span></div>
-                                    <a href="#" class="btn add-to-cart">Add To Cart</a>
+                                    <a href="#" class="btn add-to-cart" wire:click.prevent="store({{ $product->id }}, '{{ $product->name }}', {{ $product->regular_price }})">Add To Cart</a>
                                 </div>
                             </div>
                         </li>
@@ -280,6 +281,7 @@
     </div><!--end container-->
 </main>
 
+<script src="{{ mix('js/app.js') }}"></script>
 <script src="assets/js/jquery-1.12.4.minb8ff.js?ver=1.12.4"></script>
 <script src="assets/js/jquery-ui-1.12.4.minb8ff.js?ver=1.12.4"></script>
 <script src="assets/js/bootstrap.min.js"></script>
