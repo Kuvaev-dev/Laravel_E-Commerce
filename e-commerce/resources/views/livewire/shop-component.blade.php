@@ -1,22 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Digital & Electronics</title>
-    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400italic,700,700italic,900,900italic&amp;subset=latin,latin-ext" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open%20Sans:300,400,400italic,600,600italic,700,700italic&amp;subset=latin,latin-ext" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/chosen.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/color-01.css">
-</head>
-<body class="home-page home-01 ">
 
 <!-- mobile menu -->
 <div class="mercado-clone-wrap">
@@ -140,14 +123,9 @@
                 </div><!-- brand widget-->
 
                 <div class="widget mercado-widget filter-widget price-filter">
-                    <h2 class="widget-title">Price</h2>
-                    <div class="widget-content">
-                        <div id="slider-range"></div>
-                        <p>
-                            <label for="amount">Price:</label>
-                            <input type="text" id="amount" readonly>
-                            <button class="filter-submit">Filter</button>
-                        </p>
+                    <h2 class="widget-title">Price <span class="text-info">${{ $min_price }} - ${{ $max_price }}</span></h2>
+                    <div class="widget-content" style="padding: 10px 5px 40px 5px;">
+                        <div id="slider" wire:ignore></div>
                     </div>
                 </div><!-- Price-->
 
@@ -247,13 +225,26 @@
     </div><!--end container-->
 </main>
 
-<script src="assets/js/jquery-1.12.4.minb8ff.js?ver=1.12.4"></script>
-<script src="assets/js/jquery-ui-1.12.4.minb8ff.js?ver=1.12.4"></script>
-<script src="assets/js/bootstrap.min.js"></script>
-<script src="assets/js/chosen.jquery.min.js"></script>
-<script src="assets/js/owl.carousel.min.js"></script>
-<script src="assets/js/jquery.countdown.min.js"></script>
-<script src="assets/js/jquery.sticky.js"></script>
-<script src="assets/js/functions.js"></script>
-</body>
-</html>
+@push('scripts')
+    <script>
+        var slider = document.getElementById('slider');
+        noUiSlider.create(slider, {
+            start: [1, 1000],
+            connect:true,
+            range: {
+                'min' : 1,
+                'max' : 1000
+            },
+            pips: {
+                mode:'steps',
+                stepped:true,
+                density:4
+            }
+        });
+
+        slider.noUiSlider.on('update', function (value) {
+            @this.set('min_price', value[0]);
+            @this.set('max_price', value[1]);
+        });
+    </script>
+@endpush
