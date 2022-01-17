@@ -6,7 +6,7 @@
                     <div class="panel-heading">
                         <div class="row">
                             <div class="col-md-6">
-                                Add new category
+                                Add New Category
                             </div>
                             <div class="col-md-6">
                                 <a href="{{ route('admin.categories') }}" class="btn btn-success pull-right">All Category</a>
@@ -22,6 +22,7 @@
                                 <label class="col-md-4 control-label">Category Name</label>
                                 <div class="col-md-4">
                                     <input type="text" placeholder="Category Name" class="form-control input-md" wire:model="name" wire:keyup="generateslug()">
+                                    @error('name')  <p class="text-danger">{{ $message }}</p>   @enderror
                                 </div>
                             </div>
 
@@ -29,6 +30,7 @@
                                 <label class="col-md-4 control-label">Category Slug</label>
                                 <div class="col-md-4">
                                     <input type="text" placeholder="Category Slug" class="form-control input-md" wire:model="slug">
+                                    @error('slug')  <p class="text-danger">{{ $message }}</p>   @enderror
                                 </div>
                             </div>
 
