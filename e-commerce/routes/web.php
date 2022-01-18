@@ -49,4 +49,7 @@ Route::middleware(['auth:sanctum', 'verified', 'authadmin'])->group(function () 
     Route::get('/admin/slider/edit/{slide_id}', \App\Http\Livewire\Admin\AdminEditHomeSliderComponent::class)->name('admin.edithomeslider');
     Route::get('/admin/home-categories', \App\Http\Livewire\Admin\AdminHomeCategoryComponent::class)->name('admin.homecategories');
     Route::get('/admin/sale', \App\Http\Livewire\Admin\AdminSaleComponent::class)->name('admin.sale');
+    Route::get('/admin/coupons', \App\Http\Livewire\Admin\AdminCouponsComponent::class)->name('admin.coupons');
+    Route::get('/admin/coupon/add', \App\Http\Livewire\Admin\AdminAddCouponsComponent::class)->name('admin.addcoupon');
+    Route::get('/admin/coupon/edit/{coupon_id}', \App\Http\Livewire\Admin\AdminEditCouponComponent::class)->name('admin.editcoupon');
 });
