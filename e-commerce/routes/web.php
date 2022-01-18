@@ -23,7 +23,8 @@ Route::get('/cart', \App\Http\Livewire\CartComponent::class)->name('product.cart
 Route::get('/checkout', \App\Http\Livewire\CheckoutComponent::class);
 Route::get('/product/{slug}', \App\Http\Livewire\DetailsComponent::class)->name('product.details');
 Route::get('/product-category/{category_slug}', \App\Http\Livewire\CategoryComponent::class)->name('product.category');
-Route::get('search', \App\Http\Livewire\SearchComponent::class)->name('product.search');
+Route::get('/search', \App\Http\Livewire\SearchComponent::class)->name('product.search');
+Route::get('/wishlist', \App\Http\Livewire\WishlistComponent::class)->name('product.wishlist');
 
 //Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 //    return view('dashboard');
