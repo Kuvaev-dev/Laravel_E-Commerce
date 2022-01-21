@@ -43,7 +43,7 @@ class AdminEditHomeSliderComponent extends Component
         }
         $slider->status = $this->status;
         $slider->save();
-        session()->flash('message', 'Slide as been updated successfully');
+        session()->flash('message', 'Slide has been updated successfully');
     }
 
     public function render()

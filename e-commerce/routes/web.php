@@ -1,7 +1,5 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -54,4 +52,5 @@ Route::middleware(['auth:sanctum', 'verified', 'authadmin'])->group(function () 
     Route::get('/admin/coupon/add', \App\Http\Livewire\Admin\AdminAddCouponsComponent::class)->name('admin.addcoupon');
     Route::get('/admin/coupon/edit/{coupon_id}', \App\Http\Livewire\Admin\AdminEditCouponComponent::class)->name('admin.editcoupon');
     Route::get('/admin/orders', \App\Http\Livewire\Admin\AdminOrderComponent::class)->name('admin.orders');
+    Route::get('/admin/orders/{order_id}', \App\Http\Livewire\Admin\AdminOrderDetailsComponent::class)->name('admin.orderdetails');
 });
