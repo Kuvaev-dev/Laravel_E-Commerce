@@ -20,6 +20,7 @@
                                 <label class="col-md-4 control-label">Title</label>
                                 <div class="col-md-4">
                                     <input type="text" placeholder="Title" class="form-control input-md" wire:model="title">
+                                    @error('title') <p class="text-danger">{{ $message }}</p> @enderror
                                 </div>
                             </div>
 
@@ -27,6 +28,7 @@
                                 <label class="col-md-4 control-label">Subtitle</label>
                                 <div class="col-md-4">
                                     <input type="text" placeholder="Subtitle" class="form-control input-md" wire:model="subtitle">
+                                    @error('subtitle') <p class="text-danger">{{ $message }}</p> @enderror
                                 </div>
                             </div>
 
@@ -34,6 +36,7 @@
                                 <label class="col-md-4 control-label">Price</label>
                                 <div class="col-md-4">
                                     <input type="text" placeholder="Price" class="form-control input-md" wire:model="price">
+                                    @error('price') <p class="text-danger">{{ $message }}</p> @enderror
                                 </div>
                             </div>
 
@@ -41,6 +44,7 @@
                                 <label class="col-md-4 control-label">Link</label>
                                 <div class="col-md-4">
                                     <input type="text" placeholder="Link" class="form-control input-md" wire:model="link">
+                                    @error('link') <p class="text-danger">{{ $message }}</p> @enderror
                                 </div>
                             </div>
 
@@ -53,6 +57,7 @@
                                     @else
                                         <img src="{{ asset('assets/images/sliders') }}/{{ $image }}" width="120"/>
                                     @endif
+                                    @error('newimage') <p class="text-danger">{{ $message }}</p> @enderror
                                 </div>
                             </div>
 
@@ -63,6 +68,7 @@
                                         <option value="0">Inactive</option>
                                         <option value="1">Active</option>
                                     </select>
+                                    @error('status') <p class="text-danger">{{ $message }}</p> @enderror
                                 </div>
                             </div>
 

@@ -27,33 +27,19 @@ class AdminEditCategoryComponent extends Component
 
     public function updated($fields) {
         $this->validateOnly($fields, [
-            'name' => 'required',
-            'slug' => 'required|unique:products',
-            'short_description' => 'required',
-            'description' => 'required',
-            'regular_price' => 'required|numeric',
-            'sale_price' => 'numeric',
-            'SKU' => 'required',
-            'stock_status' => 'required',
-            'quantity' => 'required|numeric',
-            'newimage' => 'required|mimes:jpeg,png',
+            'category_slug' => 'required',
             'category_id' => 'required',
+            'name' => 'required',
+            'slug' => 'required'
         ]);
     }
 
     public function updateCategory() {
         $this->validate([
-            'name' => 'required',
-            'slug' => 'required|unique:products',
-            'short_description' => 'required',
-            'description' => 'required',
-            'regular_price' => 'required|numeric',
-            'sale_price' => 'numeric',
-            'SKU' => 'required',
-            'stock_status' => 'required',
-            'quantity' => 'required|numeric',
-            'newimage' => 'required|mimes:jpeg,png',
+            'category_slug' => 'required',
             'category_id' => 'required',
+            'name' => 'required',
+            'slug' => 'required'
         ]);
 
         $category = Category::find($this->category_id);
