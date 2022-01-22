@@ -26,6 +26,7 @@
                                 <label class="col-md-4 control-label">№ Of Products</label>
                                 <div class="col-md-4">
                                     <input type="text" class="form-control input-md" wire:model="numberofproducts">
+                                    @error('numberofproducts') <p class="text-danger">{{ $message }}</p> @enderror
                                 </div>
                             </div>
 

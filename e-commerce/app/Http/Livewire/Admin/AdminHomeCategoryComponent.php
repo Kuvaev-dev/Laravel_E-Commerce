@@ -11,6 +11,10 @@ class AdminHomeCategoryComponent extends Component
     public $selected_categories = [];
     public $numberofproducts;
 
+    public function updated($field) {
+        $this->validateOnly($field, [ 'numberofproducts' => 'required|numeric' ]);
+    }
+
     public function mount() {
         $category = HomeCategory::find(1);
         $this->selected_categories = explode(',', $category->sel_categories);
@@ -18,6 +22,8 @@ class AdminHomeCategoryComponent extends Component
     }
 
     public function updateHomeCategory() {
+        $this->validate([ 'numberofproducts' => 'required|numeric' ]);
+
         $category = HomeCategory::find(1);
         $category->sel_categories = implode(',', $this->selected_categories);
         $category->no_of_products = $this->numberofproducts;
