@@ -24,6 +24,7 @@ Route::get('/product-category/{category_slug}', \App\Http\Livewire\CategoryCompo
 Route::get('/search', \App\Http\Livewire\SearchComponent::class)->name('product.search');
 Route::get('/wishlist', \App\Http\Livewire\WishlistComponent::class)->name('product.wishlist');
 Route::get('/thank-you', \App\Http\Livewire\ThankyouComponent::class)->name('thankyou');
+Route::get('/contact-us', \App\Http\Livewire\ContactComponent::class)->name('contact');
 
 //Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 //    return view('dashboard');
@@ -57,4 +58,5 @@ Route::middleware(['auth:sanctum', 'verified', 'authadmin'])->group(function () 
     Route::get('/admin/coupon/edit/{coupon_id}', \App\Http\Livewire\Admin\AdminEditCouponComponent::class)->name('admin.editcoupon');
     Route::get('/admin/orders', \App\Http\Livewire\Admin\AdminOrderComponent::class)->name('admin.orders');
     Route::get('/admin/orders/{order_id}', \App\Http\Livewire\Admin\AdminOrderDetailsComponent::class)->name('admin.orderdetails');
+    Route::get('/admin/contact-us', \App\Http\Livewire\Admin\AdminContactComponent::class)->name('admin.contact');
 });
