@@ -62,4 +62,7 @@ Route::middleware(['auth:sanctum', 'verified', 'authadmin'])->group(function () 
     Route::get('/admin/orders/{order_id}', \App\Http\Livewire\Admin\AdminOrderDetailsComponent::class)->name('admin.orderdetails');
     Route::get('/admin/contact-us', \App\Http\Livewire\Admin\AdminContactComponent::class)->name('admin.contact');
     Route::get('/admin/settings', \App\Http\Livewire\Admin\AdminSettingComponent::class)->name('admin.settings');
+    Route::get('/admin/attributes', \App\Http\Livewire\Admin\AdminAttributesComponent::class)->name('admin.attributes');
+    Route::get('/admin/attribute/add', \App\Http\Livewire\Admin\AdminAddAttributeComponent::class)->name('admin.add_attribute');
+    Route::get('/admin/attribute/edit/{attribute_id}', \App\Http\Livewire\Admin\AdminEditAttributeComponent::class)->name('admin.edit_attribute');
 });
