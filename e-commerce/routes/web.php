@@ -25,6 +25,7 @@ Route::get('/search', \App\Http\Livewire\SearchComponent::class)->name('product.
 Route::get('/wishlist', \App\Http\Livewire\WishlistComponent::class)->name('product.wishlist');
 Route::get('/thank-you', \App\Http\Livewire\ThankyouComponent::class)->name('thankyou');
 Route::get('/contact-us', \App\Http\Livewire\ContactComponent::class)->name('contact');
+Route::get('/about-us', \App\Http\Livewire\AboutUsComponent::class)->name('aboutus');
 
 //Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 //    return view('dashboard');
@@ -65,4 +66,7 @@ Route::middleware(['auth:sanctum', 'verified', 'authadmin'])->group(function () 
     Route::get('/admin/attributes', \App\Http\Livewire\Admin\AdminAttributesComponent::class)->name('admin.attributes');
     Route::get('/admin/attribute/add', \App\Http\Livewire\Admin\AdminAddAttributeComponent::class)->name('admin.add_attribute');
     Route::get('/admin/attribute/edit/{attribute_id}', \App\Http\Livewire\Admin\AdminEditAttributeComponent::class)->name('admin.edit_attribute');
+    Route::get('/admin/members', \App\Http\Livewire\Admin\AdminMembersComponent::class)->name('admin.members');
+    Route::get('/admin/members/add', \App\Http\Livewire\Admin\AdminAddMemberComponent::class)->name('admin.addmembers');
+    Route::get('/admin/members/edit/{member_id}', \App\Http\Livewire\Admin\AdminEditMemberComponent::class)->name('admin.editmember');
 });
