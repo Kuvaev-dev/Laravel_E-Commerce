@@ -3,6 +3,7 @@
 namespace App\Http\Livewire;
 
 use App\Models\Coupon;
+use App\Models\Product;
 use Carbon\Carbon;
 use Cart;
 use Illuminate\Support\Facades\Auth;
@@ -128,6 +129,7 @@ class CartComponent extends Component
 
     public function render()
     {
+        $lproducts = Product::orderBy('created_at', 'DESC')->get()->take(8);
         if(session()->has('coupon')) {
             if(Cart::instance('cart')->subtotal() < session()->get('coupon')['cart_value']) {
                 session()->forget('coupon');
@@ -140,6 +142,6 @@ class CartComponent extends Component
         if(Auth::check()) {
             Cart::instance('cart')->store(Auth::user()->email);
         }
-        return view('livewire.cart-component')->layout("layouts.base");
+        return view('livewire.cart-component', ['lproducts' => $lproducts])->layout("layouts.base");
     }
 }

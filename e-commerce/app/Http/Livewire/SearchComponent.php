@@ -32,6 +32,8 @@ class SearchComponent extends Component
     use WithPagination;
     public function render()
     {
+        $lproducts = Product::orderBy('created_at', 'DESC')->get()->take(8);
+
         if ($this->sorting == 'date') {
             $products = Product::where('name', 'like', '%'.$this->search .'%')->where('category_id', 'like', '%'.$this->product_cat_id.'%')->orderBy('created_at', 'DESC')->paginate($this->pagesize);
         } else if ($this->sorting == 'price') {
@@ -42,6 +44,6 @@ class SearchComponent extends Component
 
         $categories = Category::all();
 
-        return view('livewire.search-component', ['products' => $products, 'categories' => $categories])->layout("layouts.base");
+        return view('livewire.search-component', ['lproducts' => $lproducts, 'products' => $products, 'categories' => $categories])->layout("layouts.base");
     }
 }

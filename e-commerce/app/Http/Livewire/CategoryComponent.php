@@ -35,6 +35,7 @@ class CategoryComponent extends Component
         $category_id = null;
         $category_name = '';
         $filter = '';
+        $lproducts = Product::orderBy('created_at', 'DESC')->get()->take(8);
 
         if($this->scategory_slug) {
             $scategory = Subcategory::where('slug', $this->scategory_slug)->first();
@@ -58,6 +59,6 @@ class CategoryComponent extends Component
 
         $categories = Category::all();
 
-        return view('livewire.category-component', ['products' => $products, 'categories' => $categories, 'category_name' => $category_name])->layout("layouts.base");
+        return view('livewire.category-component', ['lproducts' => $lproducts, 'products' => $products, 'categories' => $categories, 'category_name' => $category_name])->layout("layouts.base");
     }
 }
