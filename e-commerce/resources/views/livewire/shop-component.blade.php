@@ -225,8 +225,6 @@
                 </div>
             </div><!-- brand widget-->
         </div><!--end sitebar-->
-    </div><!--end row-->
-    </div><!--end container-->
 </main>
 
 @push('scripts')
