@@ -130,17 +130,17 @@
                     <h2 class="widget-title">Brand</h2>
                     <div class="widget-content">
                         <ul class="list-style vertical-list list-limited" data-show="6">
-                            <li class="list-item"><a class="filter-link active" href="#">Fashion Clothings</a></li>
-                            <li class="list-item"><a class="filter-link " href="#">Laptop Batteries</a></li>
-                            <li class="list-item"><a class="filter-link " href="#">Printer & Ink</a></li>
-                            <li class="list-item"><a class="filter-link " href="#">CPUs & Prosecsors</a></li>
-                            <li class="list-item"><a class="filter-link " href="#">Sound & Speaker</a></li>
-                            <li class="list-item"><a class="filter-link " href="#">Shop Smartphone & Tablets</a></li>
-                            <li class="list-item default-hiden"><a class="filter-link " href="#">Printer & Ink</a></li>
-                            <li class="list-item default-hiden"><a class="filter-link " href="#">CPUs & Prosecsors</a></li>
-                            <li class="list-item default-hiden"><a class="filter-link " href="#">Sound & Speaker</a></li>
-                            <li class="list-item default-hiden"><a class="filter-link " href="#">Shop Smartphone & Tablets</a></li>
-                            <li class="list-item"><a data-label='Show less<i class="fa fa-angle-up" aria-hidden="true"></i>' class="btn-control control-show-more" href="#">Show more<i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
+                            <li class="list-item"><a class="filter-link active" href="/shop">Fashion Clothings</a></li>
+                            <li class="list-item"><a class="filter-link " href="/shop">Laptop Batteries</a></li>
+                            <li class="list-item"><a class="filter-link " href="/shop">Printer & Ink</a></li>
+                            <li class="list-item"><a class="filter-link " href="/shop">CPUs & Prosecsors</a></li>
+                            <li class="list-item"><a class="filter-link " href="/shop">Sound & Speaker</a></li>
+                            <li class="list-item"><a class="filter-link " href="/shop">Shop Smartphone & Tablets</a></li>
+                            <li class="list-item default-hiden"><a class="filter-link " href="/shop">Printer & Ink</a></li>
+                            <li class="list-item default-hiden"><a class="filter-link " href="/shop">CPUs & Prosecsors</a></li>
+                            <li class="list-item default-hiden"><a class="filter-link " href="/shop">Sound & Speaker</a></li>
+                            <li class="list-item default-hiden"><a class="filter-link " href="/shop">Shop Smartphone & Tablets</a></li>
+                            <li class="list-item"><a data-label='Show less<i class="fa fa-angle-up" aria-hidden="true"></i>' class="btn-control control-show-more" href="/shop">Show more<i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
                         </ul>
                     </div>
                 </div><!-- brand widget-->
@@ -161,12 +161,12 @@
                     <h2 class="widget-title">Color</h2>
                     <div class="widget-content">
                         <ul class="list-style vertical-list has-count-index">
-                            <li class="list-item"><a class="filter-link " href="#">Red <span>(217)</span></a></li>
-                            <li class="list-item"><a class="filter-link " href="#">Yellow <span>(179)</span></a></li>
-                            <li class="list-item"><a class="filter-link " href="#">Black <span>(79)</span></a></li>
-                            <li class="list-item"><a class="filter-link " href="#">Blue <span>(283)</span></a></li>
-                            <li class="list-item"><a class="filter-link " href="#">Grey <span>(116)</span></a></li>
-                            <li class="list-item"><a class="filter-link " href="#">Pink <span>(29)</span></a></li>
+                            <li class="list-item"><a class="filter-link " href="/shop">Red <span>(217)</span></a></li>
+                            <li class="list-item"><a class="filter-link " href="/shop">Yellow <span>(179)</span></a></li>
+                            <li class="list-item"><a class="filter-link " href="/shop">Black <span>(79)</span></a></li>
+                            <li class="list-item"><a class="filter-link " href="/shop">Blue <span>(283)</span></a></li>
+                            <li class="list-item"><a class="filter-link " href="/shop">Grey <span>(116)</span></a></li>
+                            <li class="list-item"><a class="filter-link " href="/shop">Pink <span>(29)</span></a></li>
                         </ul>
                     </div>
                 </div><!-- Color -->
@@ -175,10 +175,10 @@
                     <h2 class="widget-title">Size</h2>
                     <div class="widget-content">
                         <ul class="list-style inline-round ">
-                            <li class="list-item"><a class="filter-link active" href="#">s</a></li>
-                            <li class="list-item"><a class="filter-link " href="#">M</a></li>
-                            <li class="list-item"><a class="filter-link " href="#">l</a></li>
-                            <li class="list-item"><a class="filter-link " href="#">xl</a></li>
+                            <li class="list-item"><a class="filter-link active" href="/shop">s</a></li>
+                            <li class="list-item"><a class="filter-link " href="/shop">M</a></li>
+                            <li class="list-item"><a class="filter-link " href="/shop">l</a></li>
+                            <li class="list-item"><a class="filter-link " href="/shop">xl</a></li>
                         </ul>
                         <div class="widget-banner">
                             <figure><img src="{{ asset('assets/images/size-banner-widget.jpg') }}" width="270" height="331" alt=""></figure>
