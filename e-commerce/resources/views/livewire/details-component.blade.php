@@ -89,8 +89,8 @@
                                     </div>
                                     <div class="col-xs-10">
                                         <select class="form-control" style="width: 200px;" wire:model="sattr.{{ $attr_val->productAttribute->name }}">
-                                            @foreach($attr_val->productAttribute->attributeValues->where('product_id', $p) as $pav)
-                                                <option value="{{ $pav->value }}">{{ $pav->value }}</option>
+                                            @foreach($attr_val->productAttribute->attributeValues->where('product_id', $product->id) as $pav)
+                                                <option value="{{ $pav->id }}">{{ $pav->value }}</option>
                                             @endforeach
                                         </select>
                                     </div>
@@ -168,7 +168,7 @@
                                     <div id="comments">
                                         <h2 class="woocommerce-Reviews-title">{{ $product->orderItems->where('rstatus', 1)->count() }} review for <span>{{ $product->name }}</span></h2>
                                         <ol class="commentlist">
-                                            @foreach($product->orderItems->where('rstatus', 1) as $orderItems)
+                                            @foreach($product->orderItems->where('rstatus', 1) as $orderItem)
                                                 <li class="comment byuser comment-author-admin bypostauthor even thread-even depth-1" id="li-comment-20">
                                                     <div id="comment-20" class="comment_container">
                                                         <img alt="{{ $orderItem->order->user->name }}" src="{{ asset('assets/images/profile') }}/{{ $orderItem->order->user->profile->image }}" height="80" width="80">
