@@ -47,11 +47,6 @@
                                 <option value="32">32 per page</option>
                             </select>
                         </div>
-
-                        <div class="change-display-mode">
-                            <a href="/shop" class="grid-mode display-mode active"><i class="fa fa-th"></i>Grid</a>
-                            <a href="/shop" class="list-mode display-mode"><i class="fa fa-th-list"></i>List</a>
-                        </div>
                     </div>
                 </div><!--end wrap shop control-->
 
@@ -145,25 +140,6 @@
                     </div>
                 </div><!-- Categories widget-->
 
-                <div class="widget mercado-widget filter-widget brand-widget">
-                    <h2 class="widget-title">Brand</h2>
-                    <div class="widget-content">
-                        <ul class="list-style vertical-list list-limited" data-show="6">
-                            <li class="list-item"><a class="filter-link active" href="/shop">Fashion Clothings</a></li>
-                            <li class="list-item"><a class="filter-link " href="/shop">Laptop Batteries</a></li>
-                            <li class="list-item"><a class="filter-link " href="/shop">Printer & Ink</a></li>
-                            <li class="list-item"><a class="filter-link " href="/shop">CPUs & Prosecsors</a></li>
-                            <li class="list-item"><a class="filter-link " href="/shop">Sound & Speaker</a></li>
-                            <li class="list-item"><a class="filter-link " href="/shop">Shop Smartphone & Tablets</a></li>
-                            <li class="list-item default-hiden"><a class="filter-link " href="/shop">Printer & Ink</a></li>
-                            <li class="list-item default-hiden"><a class="filter-link " href="/shop">CPUs & Prosecsors</a></li>
-                            <li class="list-item default-hiden"><a class="filter-link " href="/shop">Sound & Speaker</a></li>
-                            <li class="list-item default-hiden"><a class="filter-link " href="/shop">Shop Smartphone & Tablets</a></li>
-                            <li class="list-item"><a data-label='Show less<i class="fa fa-angle-up" aria-hidden="true"></i>' class="btn-control control-show-more" href="/shop">Show more<i class="fa fa-angle-down" aria-hidden="true"></i></a></li>
-                        </ul>
-                    </div>
-                </div><!-- brand widget-->
-
                 <div class="widget mercado-widget filter-widget price-filter">
                     <h2 class="widget-title">Price <span class="text-info">${{ $min_price }} - ${{ $max_price }}</span></h2>
                     <div class="widget-content" style="padding: 10px 5px 40px 5px;">
@@ -172,34 +148,6 @@
                 </div><!-- Price-->
 
                 <div class="widget mercado-widget filter-widget">
-                    <h2 class="widget-title">Color</h2>
-                    <div class="widget-content">
-                        <ul class="list-style vertical-list has-count-index">
-                            <li class="list-item"><a class="filter-link " href="/shop">Red <span>(217)</span></a></li>
-                            <li class="list-item"><a class="filter-link " href="/shop">Yellow <span>(179)</span></a></li>
-                            <li class="list-item"><a class="filter-link " href="/shop">Black <span>(79)</span></a></li>
-                            <li class="list-item"><a class="filter-link " href="/shop">Blue <span>(283)</span></a></li>
-                            <li class="list-item"><a class="filter-link " href="/shop">Grey <span>(116)</span></a></li>
-                            <li class="list-item"><a class="filter-link " href="/shop">Pink <span>(29)</span></a></li>
-                        </ul>
-                    </div>
-                </div><!-- Color -->
-
-                <div class="widget mercado-widget filter-widget">
-                    <h2 class="widget-title">Size</h2>
-                    <div class="widget-content">
-                        <ul class="list-style inline-round ">
-                            <li class="list-item"><a class="filter-link active" href="/shop">s</a></li>
-                            <li class="list-item"><a class="filter-link " href="/shop">M</a></li>
-                            <li class="list-item"><a class="filter-link " href="/shop">l</a></li>
-                            <li class="list-item"><a class="filter-link " href="/shop">xl</a></li>
-                        </ul>
-                        <div class="widget-banner">
-                            <figure><img src="{{ asset('assets/images/size-banner-widget.jpg') }}" width="270" height="331" alt=""></figure>
-							</div>
-						</div>
-					</div><!-- Size -->
-
 					<div class="widget mercado-widget widget-product">
 						<h2 class="widget-title">Latest Products</h2>
 						<div class="widget-content">
