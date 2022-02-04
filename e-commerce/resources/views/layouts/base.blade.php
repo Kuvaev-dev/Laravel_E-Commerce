@@ -50,22 +50,23 @@
 								<li class="menu-item lang-menu menu-item-has-children parent">
 									<a title="English" href="#"><span class="img label-before"><img src="{{ asset('assets/images/lang-en.png') }}" alt="lang-en"></span>English<i class="fa fa-angle-down" aria-hidden="true"></i></a>
 									<ul class="submenu lang" >
-										<li class="menu-item" ><a title="hungary" href="#"><span class="img label-before"><img src="{{ asset('assets/images/lang-hun.png') }}" alt="lang-hun"></span>Hungary</a></li>
-										<li class="menu-item" ><a title="german" href="#"><span class="img label-before"><img src="{{ asset('assets/images/lang-ger.png') }}" alt="lang-ger" ></span>German</a></li>
-										<li class="menu-item" ><a title="french" href="#"><span class="img label-before"><img src="{{ asset('assets/images/lang-fra.png') }}" alt="lang-fre"></span>French</a></li>
-										<li class="menu-item" ><a title="canada" href="#"><span class="img label-before"><img src="{{ asset('assets/images/lang-can.png') }}" alt="lang-can"></span>Canada</a></li>
+										<li class="menu-item" ><a title="Russian" href="#"><span class="img label-before"><img src="{{ asset('assets/images/ru.png') }}" alt="Russian"></span>Russian</a></li>
+										<li class="menu-item" ><a title="Ukrainian" href="#"><span class="img label-before"><img src="{{ asset('assets/images/ua.png') }}" alt="Ukrainian"></span>Ukrainian</a></li>
+										<li class="menu-item" ><a title="English" href="#"><span class="img label-before"><img src="{{ asset('assets/images/gb.png') }}" alt="English"></span>English</a></li>
+										<li class="menu-item" ><a title="Japan" href="#"><span class="img label-before"><img src="{{ asset('assets/images/jp.png') }}" alt="Japan"></span>Japan</a></li>
 									</ul>
 								</li>
+
 								<li class="menu-item menu-item-has-children parent" >
 									<a title="Dollar (USD)" href="#">Dollar (USD)<i class="fa fa-angle-down" aria-hidden="true"></i></a>
 									<ul class="submenu curency" >
-										<li class="menu-item" >
+										<li class="menu-item">
 											<a title="Pound (GBP)" href="#">Pound (GBP)</a>
 										</li>
-										<li class="menu-item" >
+										<li class="menu-item">
 											<a title="Euro (EUR)" href="#">Euro (EUR)</a>
 										</li>
-										<li class="menu-item" >
+										<li class="menu-item">
 											<a title="Dollar (USD)" href="#">Dollar (USD)</a>
 										</li>
 									</ul>
